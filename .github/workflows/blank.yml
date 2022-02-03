@@ -11,5 +11,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run a one-line script
-        run: git remote get-url origin
+        run: 
+          git remote get-url origin
+          cat .git/config
 
