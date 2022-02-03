@@ -12,6 +12,7 @@ jobs:
         with:
           ssh-key: ${{ secrets.SSH_KEY }}
           ssh-known-hosts: github.com
+          ssh-strict: false
 
       - name: Run a one-line script
         run: 
